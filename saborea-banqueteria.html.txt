@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saborea Banquetería - Servicios Profesionales de Catering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d4af37;
+            --secondary: #f8f1e5;
+            --dark: #5c4d3b;
+            --light: #ffffff;
+            --gray: #7a7a7a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--secondary);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--light);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 35px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/afb7113e-d53e-450c-8751-d3fd9a354895.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--light);
+            padding-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 22px;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #c49a2a;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .services h2 {
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+        
+        .service-item {
+            margin-bottom: 30px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 60px 0;
+        }
+        
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--light);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            color: var(--gray);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-utensils"></i> Saborea Banquetería</a>
+            <ul class="nav-links">
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Bienvenidos a Saborea Banquetería</h1>
+    <p>Ofrecemos servicios de catering para todo tipo de eventos. ¡Déjanos hacer de tu celebración un momento inolvidable!</p>
+    <a href="#contact" class="btn">Contáctanos</a>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-item">
+            <h3>Catering para Eventos</h3>
+            <p>Ofrecemos un servicio de catering completo para bodas, cumpleaños, y eventos corporativos.</p>
+        </div>
+        <div class="service-item">
+            <h3>Montaje de Mesas</h3>
+            <p>Nos encargamos del montaje y decoración de mesas para que tu evento luzca espectacular.</p>
+        </div>
+        <div class="service-item">
+            <h3>Servicio de Garzones</h3>
+            <p>Contamos con un equipo de garzones profesionales para atender a tus invitados.</p>
+        </div>
+        <div class="service-item">
+            <h3>Diseño de Menús</h3>
+            <p>Personalizamos los menús según tus preferencias y necesidades dietéticas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <div class="container">
+        <h2>Nuestra Galería</h2>
+        <div class="gallery-grid">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae6c1377-b8a0-4990-b781-26317fe2fc9d.png" alt="Banquete para boda elegante con detalles dorados">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/29b6fbdc-5059-4ed3-b3d2-31391dc887dc.png" alt="Buffet para matrimonio con estilo rústico">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0ce59628-6188-4205-83e2-9ecc5ebfbb61.png" alt="Mesas decoradas con flores para boda">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/28980748-28d6-4fd7-9dcd-8ce0315303d4.png" alt="Torta de bodas de tres pisos">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7ccab396-1a98-4cf4-b3d8-e6ee221160a2.png" alt="Cena romántica para recién casados">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0a912cce-407b-4f9b-becd-680598cefcdd.png" alt="Brindis con copas de cristal">
+        </div>
+    </div>
+</section>
+
+<div class="social-links" style="text-align:center; padding:20px; background:var(--light);">
+    <a href="https://instagram.com/saborea_banqueteria" style="color:var(--primary); margin:0 10px; font-size:24px;" target="_blank"><i class="fab fa-instagram"></i> @saborea_banqueteria</a>
+</div>
+
+<footer>
+    <p>&copy; 2023 Saborea Banquetería. Todos los derechos reservados.</p>
+    <p>Contacto: Saborea.banqueteria@gmail.com | Teléfono: +56972382067 | Instagram: @saborea_banqueteria</p>
+</footer>
+
+</body>
+</html>
